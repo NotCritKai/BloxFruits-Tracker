@@ -1,5 +1,12 @@
 # BloxFruits Tracker
 
+## Creating a page
+
+Copy `pages/template.html` to a new `.html` file in `pages/`, then change its
+title, heading, and content. It includes the shared styles, input-saving script,
+and navigation. Add page-specific styles or scripts only when needed. The Codes
+page is currently empty.
+
 ## Saving inputs
 
 Inputs with a unique `id` are saved automatically in the current browser.

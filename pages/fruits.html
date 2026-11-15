@@ -10,17 +10,37 @@
     <script defer src="../scripts/fruits.js"></script>
   </head>
   <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="fruits.html">Fruits</a>
+      <a href="levels.html">Levels</a>
+      <a href="titles.html">Titles</a>
+      <a href="weapons.html">Weapons</a>
+      <a href="quests.html">Quests</a>
+      <a href="races.html">Races</a>
+      <a href="codes.html">Codes</a>
+    </nav>
+
     <h1>Fruits</h1>
-    <p>
-      Keep track of the fruits you have collected in BloxFruits.
-    </p>
+    <p>Keep track of the fruits you have collected in BloxFruits.</p>
     <label for="fruit-storages">How many fruit storages do you have?</label>
-    <input type="number" id="fruit-storages" name="fruit-storages" min="1" step="1" />
-    <p>Enter your storage amount, then choose a rarity to set your fruit quantities.</p>
+    <input
+      type="number"
+      id="fruit-storages"
+      name="fruit-storages"
+      min="1"
+      step="1"
+    />
+    <p>
+      Enter your storage amount, then choose a rarity to set your fruit
+      quantities.
+    </p>
     <nav id="rarity-nav" class="rarity-nav" aria-label="Fruit rarities"></nav>
     <p id="fruit-limit-warning" role="status"></p>
     <p id="fruit-save-error" role="status"></p>
     <div id="fruit-list"></div>
-    <noscript>Enable JavaScript to view and save your fruit quantities.</noscript>
+    <noscript
+      >Enable JavaScript to view and save your fruit quantities.</noscript
+    >
   </body>
 </html>
