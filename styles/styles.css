@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Luckiest Guy";
+  src: url("../assets/fonts/luckiest-guy-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/nunito-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "Nunito", "Trebuchet MS", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+h1 {
+  font-family: "Luckiest Guy", "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.tracker-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tracker-section {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+}
+
+.tracker-section:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+.tracker-section a { 
+  text-decoration: none;
+  color: black;
+}
+.tracker-section a:hover {
+  text-decoration: underline;
+}
