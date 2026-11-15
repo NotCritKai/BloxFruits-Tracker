@@ -14,8 +14,14 @@
   font-display: swap;
 }
 
+html {
+  min-height: 100%;
+  background: linear-gradient(to top, #062c42, #0b5060) no-repeat;
+}
+
 body {
   font-family: "Nunito", "Trebuchet MS", sans-serif;
+  color: #f2fbf6;
 }
 
 button,
@@ -25,10 +31,67 @@ textarea {
   font-family: inherit;
 }
 
+input:not([type="checkbox"]):not([type="radio"]) {
+  box-sizing: border-box;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid #82b4a3;
+  border-radius: 0.4rem;
+  background: #fff9eb;
+  color: #163b43;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #536c68;
+  opacity: 1;
+}
+
+input:disabled {
+  background: #dce7dc;
+  color: #536b65;
+}
+
+button {
+  padding: 0.55rem 1rem;
+  border: 1px solid #d5a954;
+  border-radius: 0.4rem;
+  background: #f4ca7a;
+  color: #173a3e;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover:enabled {
+  background: #ffe1a0;
+}
+
+button:disabled {
+  border-color: #9ab4a9;
+  background: #dce7dc;
+  color: #536b65;
+  cursor: not-allowed;
+}
+
+:focus-visible {
+  outline: 3px solid #ffe1a0;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #f4ca7a;
+  color: #173a3e;
+}
+
 h1 {
   font-family: "Luckiest Guy", "Trebuchet MS", sans-serif;
   font-size: 2rem;
   font-weight: 400;
+  color: #ffe1a0;
+}
+
+h3 {
+  color: #ffe1a0;
 }
 
 .tracker-container {
@@ -38,7 +101,7 @@ h1 {
 }
 
 .tracker-section {
-  background-color: #f0f0f0;
+  background-color: #f6e2b9;
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -47,13 +110,15 @@ h1 {
 }
 
 .tracker-section:hover {
-  background-color: #e0e0e0;
+  background-color: #ffedcb;
   cursor: pointer;
 }
-.tracker-section a { 
+
+.tracker-container a {
+  color: #1a4550;
   text-decoration: none;
-  color: black;
 }
-.tracker-section a:hover {
+
+.tracker-container a:hover {
   text-decoration: underline;
 }

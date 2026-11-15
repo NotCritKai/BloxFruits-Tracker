@@ -1,0 +1,21 @@
+.fruit-row,
+#extra-fruits > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.25rem;
+}
+
+#extra-fruits > div {
+  margin-block-start: 0.25rem;
+}
+
+#fruit-name,
+#fruit-quantity,
+#extra-fruits input {
+  font-size: 1rem;
+}
+
+#fruit-quantity,
+#extra-fruits input[type="number"] {
+  width: calc(7ch + 2em);
+}

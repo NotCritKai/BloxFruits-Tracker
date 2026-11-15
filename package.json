@@ -2,7 +2,8 @@
   "name": "bloxfruits-tracker",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "npm run build && node --test tests/*.test.js"
   },
   "devDependencies": {
     "typescript": "^7.0.2"
