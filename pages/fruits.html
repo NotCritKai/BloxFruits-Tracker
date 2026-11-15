@@ -12,21 +12,15 @@
   <body>
     <h1>Fruits</h1>
     <p>
-      Keep track of all the fruits you have collected in BloxFruits. Add new fruits as you acquire them and monitor your progress.
+      Keep track of the fruits you have collected in BloxFruits.
     </p>
-    <p>First, Enter How Many Fruit Storages You Have:</p>
-    <input type="number" id="fruit-storages" name="fruit-storages" min="1" aria-label="Fruit storages" />
-
-    <p>Next, enter the details of each fruit you have:</p>
-    <div class="fruit-row">
-      <input type="text" id="fruit-name" name="fruit-name" placeholder="Fruit Name" aria-label="Fruit name" />
-      <input type="number" id="fruit-quantity" name="fruit-quantity" min="1" placeholder="Quantity" aria-label="Fruit quantity" aria-describedby="fruit-limit-warning" disabled />
-    </div>
-    <div id="extra-fruits"></div>
+    <label for="fruit-storages">How many fruit storages do you have?</label>
+    <input type="number" id="fruit-storages" name="fruit-storages" min="1" step="1" />
+    <p>Enter your storage amount, then choose a rarity to set your fruit quantities.</p>
+    <nav id="rarity-nav" class="rarity-nav" aria-label="Fruit rarities"></nav>
     <p id="fruit-limit-warning" role="status"></p>
     <p id="fruit-save-error" role="status"></p>
-    <br />
-    <button id="add-fruit" type="button" disabled>Add Fruit</button>
-    
+    <div id="fruit-list"></div>
+    <noscript>Enable JavaScript to view and save your fruit quantities.</noscript>
   </body>
 </html>

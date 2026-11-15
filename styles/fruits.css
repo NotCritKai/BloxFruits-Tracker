@@ -1,21 +1,73 @@
-.fruit-row,
-#extra-fruits > div {
+#fruit-storages {
+  display: block;
+  margin-top: 0.4rem;
+  width: 7rem;
+}
+
+.rarity-nav {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 0.25rem;
+  gap: 0.5rem;
+  max-width: 32rem;
 }
 
-#extra-fruits > div {
-  margin-block-start: 0.25rem;
+.rarity-nav button {
+  min-height: 2.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid #82b4a3;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: #ffe1a0;
 }
 
-#fruit-name,
-#fruit-quantity,
-#extra-fruits input {
-  font-size: 1rem;
+.rarity-nav button:hover {
+  background: #164e58;
 }
 
-#fruit-quantity,
-#extra-fruits input[type="number"] {
-  width: calc(7ch + 2em);
+.rarity-nav button[aria-pressed="true"] {
+  border-color: #d5a954;
+  background: #f4ca7a;
+  color: #173a3e;
+}
+
+#fruit-list {
+  max-width: 24rem;
+}
+
+.fruit-group {
+  margin-block: 1.5rem;
+}
+
+.fruit-group h2 {
+  margin: 0 0 0.4rem;
+  color: #ffe1a0;
+  font-size: 1.125rem;
+}
+
+.fruit-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fruit-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #4d8991;
+}
+
+.fruit-row label {
+  font-weight: 700;
+}
+
+.fruit-row input {
+  width: 6rem;
+}
+
+.fruit-row input:disabled {
+  background: #dce7dc;
+  color: #536b65;
 }

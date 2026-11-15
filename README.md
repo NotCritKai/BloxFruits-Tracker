@@ -25,7 +25,14 @@ Do not enter sensitive information in saved inputs; browser storage is not secur
 
 The source is `src/scripts.ts`. After changing it, run `npm install` once, then
 `npm run build` to update `scripts/scripts.js` before deploying the site.
-The fruit page's additional rows are managed by `src/fruits.ts` and saved in
-the same browser. Run the build after changing it to update `scripts/fruits.js`.
-Lowering the storage limit preserves existing quantities and warns when they
-exceed the new limit.
+The fruit list is managed by `src/fruits.ts` and saved in the same browser.
+Choose a rarity to show its fruits; switching rarities preserves their quantities.
+Run the build after changing it to update `scripts/fruits.js`. Lowering the
+storage limit preserves existing quantities and warns when they exceed the
+new limit. Earlier entries are imported when their names match uniquely;
+unmatched or duplicate entries remain in browser storage.
+
+Fruit names, rarities, and dealer-price order are based on the
+[Blox Fruits Wiki](https://bloxfruitswiki.org/wiki/blox-fruits/) and
+[fruit list](https://progameguides.com/roblox/all-fruits-in-roblox-blox-fruits/),
+checked November 15, 2026.
