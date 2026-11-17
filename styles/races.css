@@ -1,0 +1,290 @@
+.blue-gear {
+  font-weight: 700;
+}
+
+#race-list {
+  max-width: 32rem;
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.race-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #4d8991;
+}
+
+.race-row > label:first-child {
+  font-weight: 700;
+}
+
+.race-version {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.race-version input {
+  width: 5rem;
+}
+
+.gear-tracker {
+  max-width: 42rem;
+  margin-top: 2rem;
+}
+
+.gear-tracker select {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid #82b4a3;
+  border-radius: 0.4rem;
+  background: #fff9eb;
+  color: #163b43;
+  font-size: 1rem;
+}
+
+.gear-tracker a {
+  color: #ffe1a0;
+  text-underline-offset: 0.2em;
+}
+
+.gear-guide {
+  margin-top: 1rem;
+}
+
+.gear-guide summary {
+  color: #ffe1a0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gear-panel {
+  margin-top: 1.5rem;
+}
+
+.gear-panel fieldset {
+  margin: 1rem 0;
+  padding: 0;
+  border: 0;
+}
+
+.gear-panel legend,
+.gear-count {
+  font-weight: 700;
+}
+
+.gear-count {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.gear-count input {
+  width: 4.5rem;
+}
+
+.gear-count[hidden] {
+  display: none;
+}
+
+.gear-graph {
+  position: relative;
+  display: grid;
+  grid-template: repeat(3, 5.5rem) / repeat(3, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+  width: min(100%, 22rem);
+  margin: 1rem 0;
+}
+
+.gear-graph[hidden] {
+  display: none;
+}
+
+.gear-links {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.gear-links path {
+  fill: none;
+  stroke: #82b4a3;
+  stroke-width: 2;
+}
+
+.gear-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.3rem;
+  border: 5px dashed #82b4a3;
+  border-radius: 50%;
+  background: #164e58;
+  color: #f2fbf6;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gear-node:disabled {
+  opacity: 0.65;
+}
+
+.gear-slot-2 { grid-area: 1 / 1; }
+.gear-slot-3 { grid-area: 1 / 3; }
+.gear-awakening { grid-area: 2 / 2; }
+.gear-slot-4 { grid-area: 3 / 1; }
+.gear-final { grid-area: 3 / 2; }
+
+.gear-awakening,
+.gear-final:has(input:checked) {
+  border-color: #d5a954;
+  background: #f4ca7a;
+  color: #173a3e;
+}
+
+.gear-slot[data-color="blue"] {
+  border-color: #8ed3ec;
+  background: #125579;
+}
+
+.gear-slot[data-color="red"] {
+  border-color: #f2a59a;
+  background: #8b3531;
+}
+
+.gear-final {
+  cursor: pointer;
+  flex-direction: column;
+  font-size: 0.75rem;
+}
+
+.gear-final:has(input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.gear-sequence-status {
+  color: #ffe1a0;
+  font-size: 0.9rem;
+}
+
+.gear-sequence-status:empty {
+  display: none;
+}
+
+.gear-panel fieldset:disabled .gear-awakening {
+  filter: grayscale(1);
+  opacity: 0.55;
+}
+
+.gear-choice-group .gear-option {
+  margin-top: 0.9rem;
+}
+
+.gear-choice-group label {
+  font-weight: 700;
+}
+
+.gear-option-description,
+.gear-option-limit {
+  margin: 0.25rem 0 0 1.5rem;
+}
+
+.gear-option-limit {
+  color: #ffe1a0;
+  font-size: 0.9rem;
+}
+
+.race-trials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+}
+
+.race-trials label {
+  white-space: nowrap;
+}
+
+.race-training {
+  margin: 1rem 0;
+}
+
+.race-training > p {
+  margin: 0.4rem 0;
+}
+
+.training-fragments {
+  color: #ffe1a0;
+  font-weight: 700;
+}
+
+.training-group {
+  border-bottom: 1px solid #4d8991;
+}
+
+.training-group summary {
+  display: list-item;
+  list-style-position: inside;
+  padding: 0.6rem 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.training-group summary::marker {
+  color: #ffe1a0;
+}
+
+.training-remaining {
+  color: #ffe1a0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-left: 0.75rem;
+}
+
+.training-level {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1rem;
+  margin: 0.4rem 0 0.7rem 1rem;
+}
+
+.training-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+}
+
+.training-progress input {
+  width: 4.5rem;
+}
+
+.training-paid {
+  white-space: nowrap;
+}
+
+.training-error {
+  flex-basis: 100%;
+  color: #ffe1a0;
+}
+
+.gear-panel h4 {
+  margin: 1rem 0 0;
+  color: #ffe1a0;
+}

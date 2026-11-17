@@ -39,6 +39,28 @@ storage limit preserves existing quantities and warns when they exceed the
 new limit. Earlier entries are imported when their names match uniquely;
 unmatched or duplicate entries remain in browser storage.
 
+The races page saves unlocked races, versions, Blue Gear status, and each
+race's V4 gear selections. Select a gear in the graph to choose its color.
+Choose gears in order; clearing an earlier gear locks later selections without
+deleting them. Each choice shows only its next tier based on earlier selections.
+The per-race V4 training tracker saves progress for each training level;
+amounts follow the [Ancient One guide](https://blox-fruits.fandom.com/wiki/Ancient_One)
+and can differ from other community guides. Each training section shows the
+remaining amount; mark paid upgrades to calculate the remaining Fragment cost.
+Paid upgrades count as completed training without changing saved progress.
+Trial completion is tracked separately for each race. Complete each in-game
+upgrade before starting the next level.
+Version 4 requires Blue Gear except for Draco,
+which has its own trial. Removing Blue Gear preserves existing version 4
+entries and gear selections, and displays a warning.
+
+Race obtainment, gear colors, and ability summaries are based on the
+[race](https://bloxfruitswiki.org/wiki/races/),
+[gear](https://bloxfruitswiki.org/wiki/race-awakening/gears/),
+[awakening](https://bloxfruitswiki.org/wiki/race-awakening/),
+and [Draco trial](https://bloxfruitswiki.org/wiki/trial-of-flames/) guides,
+checked November 15, 2026.
+
 Fruit names, rarities, and dealer-price order are based on the
 [Blox Fruits Wiki](https://bloxfruitswiki.org/wiki/blox-fruits/) and
 [fruit list](https://progameguides.com/roblox/all-fruits-in-roblox-blox-fruits/),
