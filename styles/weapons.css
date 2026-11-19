@@ -1,0 +1,148 @@
+.weapon-type-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 32rem;
+  margin-bottom: 1rem;
+}
+
+.weapon-type-nav button {
+  min-height: 2.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid #82b4a3;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: #ffe1a0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.weapon-type-nav button:hover {
+  background: #164e58;
+}
+
+.weapon-type-nav button[aria-pressed="true"] {
+  border-color: #d5a954;
+  background: #f4ca7a;
+  color: #173a3e;
+}
+
+#weapons-list {
+  max-width: 32rem;
+}
+
+.weapon-group {
+  margin-block: 1.5rem;
+}
+
+.weapon-group h2 {
+  margin: 0 0 0.4rem;
+  color: #ffe1a0;
+  font-size: 1.125rem;
+}
+
+.weapon-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.weapon-row {
+  margin-bottom: 0.75rem;
+  border: 1px solid #4d8991;
+  border-radius: 0.4rem;
+  background: #0d2a2f;
+  overflow: hidden;
+}
+
+.weapon-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.weapon-row-header:hover {
+  background: #164e58;
+}
+
+.weapon-row-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.weapon-row-chevron {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4ca7a;
+  transition: transform 0.3s ease;
+  font-size: 0.75rem;
+}
+
+.weapon-row.expanded .weapon-row-chevron {
+  transform: rotate(90deg);
+}
+
+.weapon-row-header label {
+  font-weight: 700;
+  color: #ffe1a0;
+  cursor: pointer;
+  flex: 1;
+}
+
+.weapon-row-header input[type="checkbox"] {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.weapon-row-details {
+  display: none;
+  font-size: 0.95rem;
+  color: #c9e4de;
+  padding: 0 0.75rem 0.75rem 0.75rem;
+  border-top: 1px solid #4d8991;
+  background: rgba(13, 42, 47, 0.5);
+}
+
+.weapon-row.expanded .weapon-row-details {
+  display: block;
+}
+
+.weapon-image-container {
+  margin: 0.6rem 0;
+  text-align: center;
+}
+
+.weapon-image-container img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 0.4rem;
+  border: 1px solid #4d8991;
+}
+
+.weapon-row-details p {
+  margin: 0.6rem 0;
+}
+
+.weapon-row-details p strong {
+  color: #f4ca7a;
+}
+
+.weapon-row-details ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.weapon-row-details li {
+  margin: 0.3rem 0;
+}

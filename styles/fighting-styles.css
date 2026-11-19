@@ -1,0 +1,137 @@
+.sea-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 32rem;
+  margin-bottom: 1rem;
+}
+
+.sea-nav button {
+  min-height: 2.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid #82b4a3;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: #ffe1a0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sea-nav button:hover {
+  background: #164e58;
+}
+
+.sea-nav button[aria-pressed="true"] {
+  border-color: #d5a954;
+  background: #f4ca7a;
+  color: #173a3e;
+}
+
+#fighting-styles-list {
+  max-width: 32rem;
+}
+
+.style-group {
+  margin-block: 1.5rem;
+}
+
+.style-group h2 {
+  margin: 0 0 0.4rem;
+  color: #ffe1a0;
+  font-size: 1.125rem;
+}
+
+.style-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.style-row {
+  margin-bottom: 0.75rem;
+  border: 1px solid #4d8991;
+  border-radius: 0.4rem;
+  background: #0d2a2f;
+  overflow: hidden;
+}
+
+.style-row-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.style-row-header:hover {
+  background: #164e58;
+}
+
+.style-row-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.style-row-chevron {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f4ca7a;
+  transition: transform 0.3s ease;
+  font-size: 0.75rem;
+}
+
+.style-row.expanded .style-row-chevron {
+  transform: rotate(90deg);
+}
+
+.style-row-header label {
+  font-weight: 700;
+  color: #ffe1a0;
+  cursor: pointer;
+  flex: 1;
+}
+
+.style-row-header input[type="checkbox"] {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.style-row-details {
+  display: none;
+  font-size: 0.95rem;
+  color: #c9e4de;
+  padding: 0 0.75rem 0.75rem 0.75rem;
+  border-top: 1px solid #4d8991;
+  background: rgba(13, 42, 47, 0.5);
+}
+
+.style-row.expanded .style-row-details {
+  display: block;
+}
+
+.style-row-details p {
+  margin: 0.6rem 0;
+}
+
+.style-row-details p strong {
+  color: #f4ca7a;
+}
+
+.style-row-details ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.style-row-details li {
+  margin: 0.3rem 0;
+}
+
